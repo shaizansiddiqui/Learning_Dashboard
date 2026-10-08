@@ -1,24 +1,308 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="login-vc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Welcome-->
+        <scene sceneID="login-scene">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="LoginViewController" id="login-vc" customClass="LoginViewController" customModule="Learning_Dashboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="login-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="login-stack">
+                                <rect key="frame" x="28" y="238" width="337" height="426"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="LEARN" textAlignment="center" lineBreakMode="tailTruncation" id="login-brand">
+                                        <rect key="frame" x="0.0" y="0.0" width="337" height="168"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" translatesAutoresizingMaskIntoConstraints="NO" id="email-field">
+                                        <rect key="frame" x="0.0" y="186" width="337" height="50"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="email-field"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="email-height"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" translatesAutoresizingMaskIntoConstraints="NO" id="password-field">
+                                        <rect key="frame" x="0.0" y="254" width="337" height="50"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="password-field"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="password-height"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="login-button">
+                                        <rect key="frame" x="0.0" y="322" width="337" height="48"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="login-button"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="login-button-height"/>
+                                        </constraints>
+                                        <state key="normal" title="Log in"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="login-vc" eventType="touchUpInside" id="login-action"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="login-spinner">
+                                        <rect key="frame" x="0.0" y="388" width="337" height="20"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO" id="login-error">
+                                        <rect key="frame" x="0.0" y="426" width="337" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="login-safe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="login-stack" firstAttribute="centerY" secondItem="login-safe" secondAttribute="centerY" id="login-center-y"/>
+                            <constraint firstItem="login-stack" firstAttribute="leading" secondItem="login-safe" secondAttribute="leading" constant="28" id="login-leading"/>
+                            <constraint firstItem="login-stack" firstAttribute="trailing" secondItem="login-safe" secondAttribute="trailing" constant="-28" id="login-trailing"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="login-nav-item"/>
+                    <connections>
+                        <outlet property="emailField" destination="email-field" id="login-email-outlet"/>
+                        <outlet property="errorLabel" destination="login-error" id="login-error-outlet"/>
+                        <outlet property="loginButton" destination="login-button" id="login-button-outlet"/>
+                        <outlet property="passwordField" destination="password-field" id="login-password-outlet"/>
+                        <outlet property="spinner" destination="login-spinner" id="login-spinner-outlet"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="login-first-responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-181" y="5"/>
+        </scene>
+        <!--My Courses-->
+        <scene sceneID="dashboard-scene">
+            <objects>
+                <viewController storyboardIdentifier="CourseDashboardViewController" id="dashboard-vc" customClass="CourseDashboardViewController" customModule="Learning_Dashboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dashboard-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="insetGrouped" rowHeight="150" estimatedRowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="courses-table">
+                                <rect key="frame" x="0.0" y="118" width="393" height="734"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CourseCell" rowHeight="150" id="course-cell" customClass="CourseCell" customModule="Learning_Dashboard">
+                                        <rect key="frame" x="20" y="55.333332061767578" width="353" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" tableViewCell="course-cell" id="course-cell-content">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="150"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" contentMode="left" ambiguous="YES" text="Course title" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="course-title">
+                                                    <rect key="frame" x="16" y="15" width="217" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                </label>
+                                                <label opaque="NO" contentMode="left" ambiguous="YES" text="Instructor" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="course-instructor">
+                                                    <rect key="frame" x="16" y="43" width="63" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                </label>
+                                                <label opaque="NO" contentMode="left" ambiguous="YES" text="Progress 0%" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="course-progress-label">
+                                                    <rect key="frame" x="16" y="76" width="77.333333333333329" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                </label>
+                                                <progressView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="course-progress">
+                                                    <rect key="frame" x="101.33333333333333" y="83" width="235.66666666666669" height="4"/>
+                                                </progressView>
+                                                <label opaque="NO" contentMode="left" ambiguous="YES" text="0 lessons" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="course-count">
+                                                    <rect key="frame" x="15.999999999999996" y="105" width="57.666666666666657" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="course-continue">
+                                                    <rect key="frame" x="275" y="105" width="62" height="30"/>
+                                                    <state key="normal" title="Continue"/>
+                                                    <connections>
+                                                        <action selector="continueTapped:" destination="course-cell" eventType="touchUpInside" id="continue-action"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="course-title" firstAttribute="top" secondItem="course-cell-content" secondAttribute="top" constant="15" id="ct1"/>
+                                                <constraint firstItem="course-progress" firstAttribute="trailing" secondItem="course-cell-content" secondAttribute="trailing" constant="-16" id="ct10"/>
+                                                <constraint firstItem="course-count" firstAttribute="top" secondItem="course-progress-label" secondAttribute="bottom" constant="10" id="ct11"/>
+                                                <constraint firstItem="course-count" firstAttribute="leading" secondItem="course-title" secondAttribute="leading" id="ct12"/>
+                                                <constraint firstItem="course-count" firstAttribute="bottom" secondItem="course-cell-content" secondAttribute="bottom" constant="-15" id="ct13"/>
+                                                <constraint firstItem="course-continue" firstAttribute="centerY" secondItem="course-count" secondAttribute="centerY" id="ct14"/>
+                                                <constraint firstItem="course-continue" firstAttribute="trailing" secondItem="course-cell-content" secondAttribute="trailing" constant="-16" id="ct15"/>
+                                                <constraint firstItem="course-title" firstAttribute="leading" secondItem="course-cell-content" secondAttribute="leading" constant="16" id="ct2"/>
+                                                <constraint firstItem="course-title" firstAttribute="trailing" secondItem="course-cell-content" secondAttribute="trailing" constant="-120" id="ct3"/>
+                                                <constraint firstItem="course-instructor" firstAttribute="top" secondItem="course-title" secondAttribute="bottom" constant="3" id="ct4"/>
+                                                <constraint firstItem="course-instructor" firstAttribute="leading" secondItem="course-title" secondAttribute="leading" id="ct5"/>
+                                                <constraint firstItem="course-progress-label" firstAttribute="top" secondItem="course-instructor" secondAttribute="bottom" constant="12" id="ct6"/>
+                                                <constraint firstItem="course-progress-label" firstAttribute="leading" secondItem="course-title" secondAttribute="leading" id="ct7"/>
+                                                <constraint firstItem="course-progress" firstAttribute="centerY" secondItem="course-progress-label" secondAttribute="centerY" id="ct8"/>
+                                                <constraint firstItem="course-progress" firstAttribute="leading" secondItem="course-progress-label" secondAttribute="trailing" constant="8" id="ct9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="continueButton" destination="course-continue" id="cc6"/>
+                                            <outlet property="instructorLabel" destination="course-instructor" id="cc2"/>
+                                            <outlet property="lessonCountLabel" destination="course-count" id="cc5"/>
+                                            <outlet property="progressLabel" destination="course-progress-label" id="cc3"/>
+                                            <outlet property="progressView" destination="course-progress" id="cc4"/>
+                                            <outlet property="titleLabel" destination="course-title" id="cc1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dashboard-spinner">
+                                <rect key="frame" x="178" y="432.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dashboard-state">
+                                <rect key="frame" x="24" y="420.33333333333331" width="345" height="61.333333333333314"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dashboard-state-stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="61.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" contentMode="left" text="Unable to load courses." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO" id="dashboard-state-label">
+                                                <rect key="frame" x="87" y="0.0" width="171" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dashboard-retry">
+                                                <rect key="frame" x="141" y="31.333333333333371" width="63" height="30"/>
+                                                <state key="normal" title="Try again"/>
+                                                <connections>
+                                                    <action selector="retry" destination="dashboard-vc" eventType="touchUpInside" id="retry-action"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dashboard-state-stack" firstAttribute="centerX" secondItem="dashboard-state" secondAttribute="centerX" id="ds3"/>
+                                    <constraint firstItem="dashboard-state-stack" firstAttribute="top" secondItem="dashboard-state" secondAttribute="top" id="ds4"/>
+                                    <constraint firstItem="dashboard-state-stack" firstAttribute="leading" secondItem="dashboard-state" secondAttribute="leading" id="ds5"/>
+                                    <constraint firstAttribute="trailing" secondItem="dashboard-state-stack" secondAttribute="trailing" id="ds6"/>
+                                    <constraint firstItem="dashboard-state-stack" firstAttribute="bottom" secondItem="dashboard-state" secondAttribute="bottom" id="ds7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dashboard-safe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="courses-table" firstAttribute="top" secondItem="dashboard-safe" secondAttribute="top" id="db1"/>
+                            <constraint firstItem="courses-table" firstAttribute="leading" secondItem="dashboard-view" secondAttribute="leading" id="db2"/>
+                            <constraint firstItem="courses-table" firstAttribute="trailing" secondItem="dashboard-view" secondAttribute="trailing" id="db3"/>
+                            <constraint firstItem="courses-table" firstAttribute="bottom" secondItem="dashboard-view" secondAttribute="bottom" id="db4"/>
+                            <constraint firstItem="dashboard-spinner" firstAttribute="centerX" secondItem="dashboard-safe" secondAttribute="centerX" id="db5"/>
+                            <constraint firstItem="dashboard-spinner" firstAttribute="centerY" secondItem="dashboard-safe" secondAttribute="centerY" id="db6"/>
+                            <constraint firstItem="dashboard-state" firstAttribute="leading" secondItem="dashboard-safe" secondAttribute="leading" constant="24" id="db7"/>
+                            <constraint firstItem="dashboard-state" firstAttribute="trailing" secondItem="dashboard-safe" secondAttribute="trailing" constant="-24" id="db8"/>
+                            <constraint firstItem="dashboard-state" firstAttribute="centerY" secondItem="dashboard-safe" secondAttribute="centerY" id="db9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Courses" id="dashboard-nav-item">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" style="done" id="dashboard-reload">
+                            <connections>
+                                <action selector="reload" destination="dashboard-vc" id="reload-action"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="retryButton" destination="dashboard-retry" id="db-out5"/>
+                        <outlet property="spinner" destination="dashboard-spinner" id="db-out2"/>
+                        <outlet property="stateContainer" destination="dashboard-state" id="db-out3"/>
+                        <outlet property="stateLabel" destination="dashboard-state-label" id="db-out4"/>
+                        <outlet property="tableView" destination="courses-table" id="db-out1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dashboard-first-responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-556" y="-672"/>
+        </scene>
+        <!--Course Details-->
+        <scene sceneID="details-scene">
+            <objects>
+                <viewController storyboardIdentifier="CourseDetailsViewController" id="details-vc" customClass="CourseDetailsViewController" customModule="Learning_Dashboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="details-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="details-header">
+                                <rect key="frame" x="20" y="130" width="353" height="44.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" text="Instructor · 0% complete" lineBreakMode="tailTruncation" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO" id="details-progress-label">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="details-progress">
+                                        <rect key="frame" x="0.0" y="30.333333333333343" width="353" height="4"/>
+                                    </progressView>
+                                    <label opaque="NO" contentMode="left" text="" lineBreakMode="tailTruncation" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO" id="details-message">
+                                        <rect key="frame" x="0.0" y="44.333333333333343" width="353" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="76" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lessons-table">
+                                <rect key="frame" x="0.0" y="178.33333333333331" width="393" height="673.66666666666674"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="LessonCell" rowHeight="-1" style="IBUITableViewCellStyleDefault" id="lesson-cell" customClass="LessonCell" customModule="Learning_Dashboard">
+                                        <rect key="frame" x="20" y="55.333332061767578" width="353" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" tableViewCell="lesson-cell" id="lesson-cell-content">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="details-safe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="details-header" firstAttribute="top" secondItem="details-safe" secondAttribute="top" constant="12" id="de1"/>
+                            <constraint firstItem="details-header" firstAttribute="leading" secondItem="details-safe" secondAttribute="leading" constant="20" id="de2"/>
+                            <constraint firstItem="details-header" firstAttribute="trailing" secondItem="details-safe" secondAttribute="trailing" constant="-20" id="de3"/>
+                            <constraint firstItem="lessons-table" firstAttribute="top" secondItem="details-header" secondAttribute="bottom" constant="4" id="de4"/>
+                            <constraint firstItem="lessons-table" firstAttribute="leading" secondItem="details-view" secondAttribute="leading" id="de5"/>
+                            <constraint firstItem="lessons-table" firstAttribute="trailing" secondItem="details-view" secondAttribute="trailing" id="de6"/>
+                            <constraint firstItem="lessons-table" firstAttribute="bottom" secondItem="details-view" secondAttribute="bottom" id="de7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Course Details" id="details-nav-item"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="details-message" id="de-out4"/>
+                        <outlet property="progressLabel" destination="details-progress-label" id="de-out1"/>
+                        <outlet property="progressView" destination="details-progress" id="de-out2"/>
+                        <outlet property="tableView" destination="lessons-table" id="de-out3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="details-first-responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-556" y="-672"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.38039215686274508" green="0.33333333333333331" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.2196078431372549" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
