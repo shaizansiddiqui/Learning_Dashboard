@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		795348B330775D9D00FB5FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7953489130775D9C00FB5FD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7953489830775D9C00FB5FD5;
+			remoteInfo = Learning_Dashboard;
+		};
+		795348BD30775D9D00FB5FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7953489130775D9C00FB5FD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7953489830775D9C00FB5FD5;
+			remoteInfo = Learning_Dashboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7953489930775D9C00FB5FD5 /* Learning_Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learning_Dashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		795348B230775D9D00FB5FD5 /* Learning_DashboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Learning_DashboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		795348BC30775D9D00FB5FD5 /* Learning_DashboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Learning_DashboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		795348C230775D9D00FB5FD5 /* Exceptions for "Learning_Dashboard" folder in "Learning_Dashboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7953489830775D9C00FB5FD5 /* Learning_Dashboard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7953489B30775D9C00FB5FD5 /* Learning_Dashboard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				795348C230775D9D00FB5FD5 /* Exceptions for "Learning_Dashboard" folder in "Learning_Dashboard" target */,
+			);
+			path = Learning_Dashboard;
+			sourceTree = "<group>";
+		};
+		795348B530775D9D00FB5FD5 /* Learning_DashboardTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Learning_DashboardTests;
+			sourceTree = "<group>";
+		};
+		795348BF30775D9D00FB5FD5 /* Learning_DashboardUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Learning_DashboardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7953489630775D9C00FB5FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		795348AF30775D9D00FB5FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		795348B930775D9D00FB5FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7953489030775D9C00FB5FD5 = {
+			isa = PBXGroup;
+			children = (
+				7953489B30775D9C00FB5FD5 /* Learning_Dashboard */,
+				795348B530775D9D00FB5FD5 /* Learning_DashboardTests */,
+				795348BF30775D9D00FB5FD5 /* Learning_DashboardUITests */,
+				7953489A30775D9C00FB5FD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7953489A30775D9C00FB5FD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7953489930775D9C00FB5FD5 /* Learning_Dashboard.app */,
+				795348B230775D9D00FB5FD5 /* Learning_DashboardTests.xctest */,
+				795348BC30775D9D00FB5FD5 /* Learning_DashboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7953489830775D9C00FB5FD5 /* Learning_Dashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795348C330775D9D00FB5FD5 /* Build configuration list for PBXNativeTarget "Learning_Dashboard" */;
+			buildPhases = (
+				7953489530775D9C00FB5FD5 /* Sources */,
+				7953489630775D9C00FB5FD5 /* Frameworks */,
+				7953489730775D9C00FB5FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				7953489B30775D9C00FB5FD5 /* Learning_Dashboard */,
+			);
+			name = Learning_Dashboard;
+			productName = Learning_Dashboard;
+			productReference = 7953489930775D9C00FB5FD5 /* Learning_Dashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		795348B130775D9D00FB5FD5 /* Learning_DashboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795348C830775D9D00FB5FD5 /* Build configuration list for PBXNativeTarget "Learning_DashboardTests" */;
+			buildPhases = (
+				795348AE30775D9D00FB5FD5 /* Sources */,
+				795348AF30775D9D00FB5FD5 /* Frameworks */,
+				795348B030775D9D00FB5FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				795348B430775D9D00FB5FD5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				795348B530775D9D00FB5FD5 /* Learning_DashboardTests */,
+			);
+			name = Learning_DashboardTests;
+			productName = Learning_DashboardTests;
+			productReference = 795348B230775D9D00FB5FD5 /* Learning_DashboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		795348BB30775D9D00FB5FD5 /* Learning_DashboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795348CB30775D9D00FB5FD5 /* Build configuration list for PBXNativeTarget "Learning_DashboardUITests" */;
+			buildPhases = (
+				795348B830775D9D00FB5FD5 /* Sources */,
+				795348B930775D9D00FB5FD5 /* Frameworks */,
+				795348BA30775D9D00FB5FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				795348BE30775D9D00FB5FD5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				795348BF30775D9D00FB5FD5 /* Learning_DashboardUITests */,
+			);
+			name = Learning_DashboardUITests;
+			productName = Learning_DashboardUITests;
+			productReference = 795348BC30775D9D00FB5FD5 /* Learning_DashboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7953489130775D9C00FB5FD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					7953489830775D9C00FB5FD5 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					795348B130775D9D00FB5FD5 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 7953489830775D9C00FB5FD5;
+					};
+					795348BB30775D9D00FB5FD5 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 7953489830775D9C00FB5FD5;
+					};
+				};
+			};
+			buildConfigurationList = 7953489430775D9C00FB5FD5 /* Build configuration list for PBXProject "Learning_Dashboard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7953489030775D9C00FB5FD5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7953489A30775D9C00FB5FD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7953489830775D9C00FB5FD5 /* Learning_Dashboard */,
+				795348B130775D9D00FB5FD5 /* Learning_DashboardTests */,
+				795348BB30775D9D00FB5FD5 /* Learning_DashboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7953489730775D9C00FB5FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		795348B030775D9D00FB5FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		795348BA30775D9D00FB5FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7953489530775D9C00FB5FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		795348AE30775D9D00FB5FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		795348B830775D9D00FB5FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		795348B430775D9D00FB5FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7953489830775D9C00FB5FD5 /* Learning_Dashboard */;
+			targetProxy = 795348B330775D9D00FB5FD5 /* PBXContainerItemProxy */;
+		};
+		795348BE30775D9D00FB5FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7953489830775D9C00FB5FD5 /* Learning_Dashboard */;
+			targetProxy = 795348BD30775D9D00FB5FD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		795348C430775D9D00FB5FD5 /* Debug configuration for PBXNativeTarget "Learning_Dashboard" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y4QKMN59N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Learning_Dashboard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Learning-Dashboard.Learning-Dashboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		795348C530775D9D00FB5FD5 /* Release configuration for PBXNativeTarget "Learning_Dashboard" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y4QKMN59N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Learning_Dashboard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Learning-Dashboard.Learning-Dashboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		795348C630775D9D00FB5FD5 /* Debug configuration for PBXProject "Learning_Dashboard" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Y4QKMN59N8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		795348C730775D9D00FB5FD5 /* Release configuration for PBXProject "Learning_Dashboard" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y4QKMN59N8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		795348C930775D9D00FB5FD5 /* Debug configuration for PBXNativeTarget "Learning_DashboardTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y4QKMN59N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Learning-Dashboard.Learning-DashboardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Learning_Dashboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Learning_Dashboard";
+			};
+			name = Debug;
+		};
+		795348CA30775D9D00FB5FD5 /* Release configuration for PBXNativeTarget "Learning_DashboardTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y4QKMN59N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Learning-Dashboard.Learning-DashboardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Learning_Dashboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Learning_Dashboard";
+			};
+			name = Release;
+		};
+		795348CC30775D9D00FB5FD5 /* Debug configuration for PBXNativeTarget "Learning_DashboardUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y4QKMN59N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Learning-Dashboard.Learning-DashboardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Learning_Dashboard;
+			};
+			name = Debug;
+		};
+		795348CD30775D9D00FB5FD5 /* Release configuration for PBXNativeTarget "Learning_DashboardUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y4QKMN59N8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Learning-Dashboard.Learning-DashboardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Learning_Dashboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7953489430775D9C00FB5FD5 /* Build configuration list for PBXProject "Learning_Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795348C630775D9D00FB5FD5 /* Debug configuration for PBXProject "Learning_Dashboard" */,
+				795348C730775D9D00FB5FD5 /* Release configuration for PBXProject "Learning_Dashboard" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		795348C330775D9D00FB5FD5 /* Build configuration list for PBXNativeTarget "Learning_Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795348C430775D9D00FB5FD5 /* Debug configuration for PBXNativeTarget "Learning_Dashboard" */,
+				795348C530775D9D00FB5FD5 /* Release configuration for PBXNativeTarget "Learning_Dashboard" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		795348C830775D9D00FB5FD5 /* Build configuration list for PBXNativeTarget "Learning_DashboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795348C930775D9D00FB5FD5 /* Debug configuration for PBXNativeTarget "Learning_DashboardTests" */,
+				795348CA30775D9D00FB5FD5 /* Release configuration for PBXNativeTarget "Learning_DashboardTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		795348CB30775D9D00FB5FD5 /* Build configuration list for PBXNativeTarget "Learning_DashboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795348CC30775D9D00FB5FD5 /* Debug configuration for PBXNativeTarget "Learning_DashboardUITests" */,
+				795348CD30775D9D00FB5FD5 /* Release configuration for PBXNativeTarget "Learning_DashboardUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7953489130775D9C00FB5FD5 /* Project object */;
+	validationLevel = 1;
+}
